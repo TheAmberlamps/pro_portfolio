@@ -3,6 +3,7 @@ body {
   margin: 0;
   background-color: #25003a;
   overflow: hidden;
+  z-index: -2;
 }
 
 canvas {
@@ -13,4 +14,24 @@ canvas {
   height: 100%;
   background-color: black;
   overflow: hidden;
+  /* z-index: -1; */
+}
+
+.my-augfiguration {
+  --aug-tr: 25px;
+  --aug-bl: 57px;
+  --aug-br-width: 25px;
+  --aug-br-height: 50%;
+  --aug-border: 10px;
+  --aug-border-bg: linear-gradient(to botto...);
+  --aug-border-fallback-color: #d8aea4;
+  --aug-inset: 10px;
+  --aug-inset-bg: #fbe806;
+  position: absolute;
+  top: 2rem;
+  right: 3rem;
+  background: linear-gradient(#ff604d, #b1ffff);
+  color: #b1ffff;
+  font-size: 5rem;
+  /* z-index: 2;*/
 }
