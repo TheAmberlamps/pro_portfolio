@@ -8,15 +8,23 @@
       href="https://fonts.googleapis.com/css?family=Tomorrow&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../pro_portfolio/assets/css/style.css" />
     <link
       rel="stylesheet"
       type="text/css"
       href="https://unpkg.com/augmented-ui/augmented.css"
     />
+    <link rel="stylesheet" href="../pro_portfolio/assets/css/style.css" />
     <title>Document</title>
   </head>
   <body>
-    <img src="assets/pics/myPic.png" id="myPic" />
+    <div class="my-augfiguration" augmented-ui="tr-clip bl-clip br-clip-y exe">
+      <img id="myPic" src="assets/pics/myPic.png" alt="Picture of me" />
+      <!-- this should probably be an unordered list -->
+      <p>
+        LOOK UPON MY WORKS YE MIGHTY AND DESPAIR <br />BECAUSE YOU ABOUT TO GET
+        PUT IN A LIST
+      </p>
+    </div>
+    <div class="demo" augmented-ui="tl-clip br-clip exe"></div>
   </body>
 </html>
