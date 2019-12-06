@@ -3,7 +3,15 @@ body {
   margin: 0;
   background-color: #25003a;
   overflow: hidden;
-  z-index: -2;
+  font-family: "Tomorrow", sans-serif;
+}
+
+#wrapper {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
 }
 
 canvas {
@@ -17,6 +25,13 @@ canvas {
   /* z-index: -1; */
 }
 
+#myPic {
+  display: block;
+  height: 100px;
+  width: 100px;
+  /* z-index: 1; */
+}
+
 .my-augfiguration {
   --aug-tr: 25px;
   --aug-bl: 57px;
@@ -28,10 +43,10 @@ canvas {
   --aug-inset: 10px;
   --aug-inset-bg: #fbe806;
   position: absolute;
-  top: 2rem;
-  right: 3rem;
+  top: 10rem;
   background: linear-gradient(#ff604d, #b1ffff);
-  color: #b1ffff;
-  font-size: 5rem;
-  /* z-index: 2;*/
+  color: black;
+  width: 40rem;
+  height: 10rem;
+  font-size: 1rem;
 }
