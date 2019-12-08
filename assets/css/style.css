@@ -41,19 +41,23 @@ canvas {
 
 #myPic {
   display: inline-block;
-  height: 100px;
-  width: 100px;
+  height: 120px;
+  width: 120px;
+  opacity: 0.8;
+  margin-left: 20px;
+  margin-top: 20px;
 }
 
 .my-augfiguration {
-  --aug-tr: 25px;
-  --aug-bl: 57px;
-  /* --aug-br-width: 25px;
-  --aug-br-height: 50%; */
-  --aug-border: 3px;
+  --aug-border: 2px;
   --aug-border-bg: linear-gradient(#0048a8, #00a8c0);
-  --aug-inset: 10px;
+  --aug-border-opacity: 0.5;
+  --aug-inset-opacity: 0.8;
+  --aug-inset: 6px;
   --aug-inset-bg: #481878;
+  --aug-t-width: 33%;
+  --aug-t-height: 10px;
+  --aug-r-height: 40%;
   text-align: left;
   padding: 15px;
   margin: 10px;
@@ -65,9 +69,11 @@ canvas {
 }
 
 .demo {
-  --aug-border: 3px;
-  --aug-inset: 10px;
+  --aug-border: 2px;
   --aug-border-bg: linear-gradient(#0048a8, #00a8c0);
+  --aug-border-opacity: 0.5;
+  --aug-inset-opacity: 0.8;
+  --aug-inset: 6px;
   --aug-inset-bg: #481878;
   position: relative;
   bottom: 14rem;
