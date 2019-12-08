@@ -54,7 +54,7 @@
   }
 
   Node.prototype.drawNode = function() {
-    var color = "rgba(255, 0, 0, " + this.brightness + ")";
+    var color = "rgba(216, 48, 168, " + this.brightness + ")";
     ctx.beginPath();
     ctx.arc(
       this.x,
@@ -69,7 +69,7 @@
 
   Node.prototype.drawConnections = function() {
     for (var i = 0; i < this.siblings.length; i++) {
-      var color = "rgba(255, 255, 255, " + this.brightness + ")";
+      var color = "rgba(24, 168, 216, " + this.brightness + ")";
       ctx.beginPath();
       ctx.moveTo(this.x, this.y);
       ctx.lineTo(this.siblings[i].x, this.siblings[i].y);
