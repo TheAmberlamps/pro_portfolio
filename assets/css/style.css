@@ -1,8 +1,8 @@
 html,
 body {
-  margin: 0;
-  background-color: #25003a;
-  overflow: hidden;
+  /* margin: 0; */
+  /* background-color: #25003a; */
+  /* overflow: hidden; */
   font-family: "Inconsolata", monospace;
   /* font-family: "Tomorrow", sans-serif; */
 }
@@ -10,8 +10,13 @@ p {
   display: inline-block;
   color: white;
 }
-ul {
+ul#bio {
   display: inline-block;
+  color: white;
+  list-style-type: none;
+}
+
+ul {
   color: white;
   list-style-type: none;
 }
@@ -21,15 +26,7 @@ ul {
   background-color: black;
 }
 
-#wrapper {
-  position: relative;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-}
-
-canvas {
+/* canvas {
   position: relative;
   top: 0;
   bottom: 0;
@@ -37,6 +34,16 @@ canvas {
   height: 100%;
   background-color: rgb(0, 24, 48);
   overflow: hidden;
+} */
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 24, 48);
+  z-index: -1;
 }
 
 #myPic {
@@ -54,7 +61,7 @@ canvas {
   --aug-border-opacity: 0.5;
   --aug-inset-opacity: 0.8;
   --aug-inset: 6px;
-  --aug-inset-bg: #481878;
+  --aug-inset-bg: linear-gradient(to top, #481878, #00a8c0);
   --aug-t-width: 33%;
   --aug-t-height: 10px;
   --aug-r-height: 40%;
@@ -62,11 +69,27 @@ canvas {
   text-align: left;
   padding: 15px;
   margin: 10px;
-  position: absolute;
-  top: 10rem;
+  /* position: absolute;
+  top: 10rem; */
   width: 40rem;
   height: 10rem;
   font-size: 1rem;
+  overflow: hidden;
+}
+
+.text-augfig {
+  --aug-border: 2px;
+  --aug-border-bg: linear-gradient(#0048a8, #00a8c0);
+  --aug-border-opacity: 0.5;
+  --aug-inset-opacity: 0.8;
+  --aug-inset: 6px;
+  /* position: absolute;
+  bottom: 20rem; */
+  text-align: left;
+  padding: 15px;
+  margin: 10px;
+  font-size: 1rem;
+  width: 40rem;
 }
 
 .demo {
@@ -75,9 +98,8 @@ canvas {
   --aug-border-opacity: 0.5;
   --aug-inset-opacity: 0.8;
   --aug-inset: 6px;
-  --aug-inset-bg: #481878;
+  --aug-inset-bg: linear-gradient(to top, #481878, #00a8c0);
   position: relative;
-  bottom: 14rem;
   display: inline-block;
   width: 110px;
   height: 110px;
