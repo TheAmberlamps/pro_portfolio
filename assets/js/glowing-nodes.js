@@ -80,7 +80,7 @@
   };
 
   Node.prototype.moveNode = function() {
-    this.energy -= 2;
+    this.enbergy -= 2;
     if (this.energy < 1) {
       this.energy = Math.random() * 100;
       if (this.x - this.anchorX < -ANCHOR_LENGTH) {

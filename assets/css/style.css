@@ -6,12 +6,31 @@ body {
   font-family: "Inconsolata", monospace;
   /* font-family: "Tomorrow", sans-serif; */
 }
+
+nav {
+  margin: auto;
+  /* position: absolute; */
+  width: 40%;
+  text-align: center;
+  display: flex;
+  padding: 2rem 0px 0px 0px;
+  justify-content: space-between;
+}
+
+.navlinks {
+  position: relative;
+  vertical-align: middle;
+}
+
 p {
   display: inline-block;
   color: white;
 }
+
 ul#bio {
   display: inline-block;
+  position: relative;
+  left: 4rem;
   color: white;
   list-style-type: none;
 }
@@ -26,6 +45,12 @@ ul {
   background-color: black;
 }
 
+.falling {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  padding: 15px;
+}
+
 canvas {
   position: absolute;
   top: 0;
@@ -33,16 +58,39 @@ canvas {
   width: 100%;
   height: 100%;
   background-color: rgb(0, 24, 48);
-  z-index: -1;
 }
 
 #myPic {
   display: inline-block;
+  position: relative;
   height: 120px;
   width: 120px;
   opacity: 0.8;
-  margin-left: 30px;
-  margin-top: 20px;
+  padding: 10px;
+}
+
+.pic-augfig {
+  --aug-border: 4px;
+  --aug-border-bg: linear-gradient(#00a8c0, #0048a8);
+  --aug-border-opacity: 0.7;
+  /* --aug-inset-opacity: 0.8; */
+  /* --aug-inset: 6px;
+  --aug-inset-bg: linear-gradient(to top, #481878, #00a8c0); */
+  display: inline-block;
+  position: relative;
+  left: 3rem;
+  /* align-content: center; */
+}
+
+.nav-augfig {
+  --aug-border: 2px;
+  --aug-border-bg: linear-gradient(#0048a8, #00a8c0);
+  --aug-border-opacity: 0.5;
+  --aug-inset-opacity: 0.8;
+  --aug-inset: 6px;
+  --aug-inset-bg: linear-gradient(to top, #481878, #00a8c0);
+  display: inline-block;
+  position: relative;
 }
 
 .my-augfiguration {
@@ -58,9 +106,10 @@ canvas {
   --aug-bl-height: 25%;
   text-align: left;
   padding: 15px;
-  margin: 10px;
-  /* position: absolute;
-  top: 10rem; */
+  margin: auto;
+  position: relative;
+  top: 3rem;
+  /* top: 10rem; */
   width: 40rem;
   height: 10rem;
   font-size: 1rem;
@@ -68,18 +117,22 @@ canvas {
 }
 
 .text-augfig {
-  --aug-border: 2px;
+  --aug-border: 4px;
   --aug-border-bg: linear-gradient(#0048a8, #00a8c0);
   --aug-border-opacity: 0.5;
-  --aug-inset-opacity: 0.8;
-  --aug-inset: 6px;
-  /* position: absolute;
-  bottom: 20rem; */
+  /* --aug-inset-opacity: 0.8; */
+  /* --aug-inset: 6px; */
+  position: relative;
+  top: 8rem;
   text-align: left;
   padding: 15px;
-  margin: 10px;
+  margin: auto;
   font-size: 1rem;
-  width: 40rem;
+  width: 50rem;
+}
+
+#bio {
+  padding: 1rem;
 }
 
 .demo {
@@ -90,10 +143,12 @@ canvas {
   --aug-inset: 6px;
   --aug-inset-bg: linear-gradient(to top, #481878, #00a8c0);
   position: relative;
-  display: inline-block;
+  display: block;
+  top: 5rem;
   width: 250px;
   height: 250px;
-  margin: 10px;
+  margin: auto;
+  border: 20px;
   padding: 10px; /* mind the gap */
   text-align: center;
 }
