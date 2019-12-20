@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" href="assets/pics/myPic.png" />
     <link
       href="https://fonts.googleapis.com/css?family=Tomorrow&display=swap"
       rel="stylesheet"
@@ -24,57 +25,104 @@
     <canvas></canvas>
 
     <nav>
-      <a class="pic-augfig" augmented-ui="exe" href="index.html"
+      <a
+        class="nav-augfig"
+        augmented-ui="l-rect b-clip-x tr-clip exe"
+        style="--aug-b-height: 5%; --aug-l-width: 15%; --aug-l-height: 40%"
+        href="index.html"
         ><p class="falling">U S E R</p></a
       >
-
-      <a class="pic-augfig" augmented-ui="exe" href="portfolio.html"
+      <a href="https://github.com/TheAmberlamps"
+        ><img
+          class="navlinks"
+          src="assets/pics/GitHub-Mark-120px.png"
+          style="width: 75px; height: 75px"
+      /></a>
+      <a href="mailto:unsted.paul@gmail.com"
+        ><img
+          src="assets/pics/logo-gmail.png"
+          class="navlinks"
+          style="width: 75px; height: 75px"
+      /></a>
+      <a href="https://www.linkedin.com/in/paul-unsted-b0ab87198/"
+        ><img
+          class="navlinks"
+          src="assets/pics/Li-In.png"
+          style="width: 75px; height: 75px"
+      /></a>
+      <a
+        class="nav-augfig"
+        augmented-ui="r-rect b-clip-x tl-clip exe"
+        style="--aug-b-height: 5%; --aug-r-width: 15%"
+        href="portfolio.html"
         ><p class="falling">W O R K</p></a
       >
     </nav>
+    <div
+      class="text-augfig"
+      augmented-ui="tl-clip-y tr-clip-x bl-clip-x br-clip-y exe"
+      style="text-align: center;"
+    >
+      <p id="bio">
+        Below are some of the projects the subject is know to have created,
+        <br />
+        either independently or collaboratively.
+        <br /><br />
+        Section is currently unfinished, final page will have items laid out
+        correctly and open modal popups with a summary of the individual
+        project.
+      </p>
+    </div>
 
-    <div class="demo" augmented-ui="exe">
-      <a href="https://project-3-heroku.herokuapp.com/"
-        ><img src="assets/pics/SMeet.png" style="width:100%; height:80%;"
-      /></a>
-      <a href="https://github.com/TheAmberlamps/Group-Project-3"
-        ><p>Spartan Meet</p></a
-      >
-    </div>
-    <div class="demo" augmented-ui="exe">
-      <a href="https://yourtune.herokuapp.com/"
-        ><img src="assets/pics/YTune.png" style="width:100%; height:80%;"
-      /></a>
-      <a href="https://github.com/TheAmberlamps/YourTune"><p>YourTune</p></a>
-    </div>
-    <div class="demo" augmented-ui="exe">
-      <a href="https://www.megandrewplumbing.com/"
-        ><img src="assets/pics/MegDrew.png" style="width:100%; height:80%;"
-      /></a>
-      <p>Megan-Drew Plumbing</p>
-    </div>
-    <div class="demo" augmented-ui="exe">
-      <a href="https://thawing-lowlands-09515.herokuapp.com/"
-        ><img src="assets/pics/Burger.png" style="width:100%; height:80%;"
-      /></a>
-      <a href="https://github.com/TheAmberlamps/burger"><p>Burger-Time</p></a>
-    </div>
-    <div class="demo" augmented-ui="exe">
-      <a href="https://theamberlamps.github.io/TriviaGame/"
-        ><img src="assets/pics/Vidtriv.png" style="width:100%; height:80%;"
-      /></a>
-      <a href="https://github.com/TheAmberlamps/TriviaGame"
-        ><p>Videogame Trivia</p></a
-      >
-    </div>
-    <div class="demo" augmented-ui="exe">
-      <a href="https://theamberlamps.github.io/unit-4-game/"
-        ><img src="assets/pics/Cryscol.png" style="width:100%; height:80%;"
-      /></a>
-      <a href="https://github.com/TheAmberlamps/unit-4-game"
-        ><p>Crystal Collector</p></a
-      >
-    </div>
+    <span id="wrap">
+      <div class="demo" augmented-ui="exe">
+        <a href="https://project-3-heroku.herokuapp.com/"
+          ><img src="assets/pics/SMeet.png" style="width:100%; height:80%;"
+        /></a>
+        <a href="https://github.com/TheAmberlamps/Group-Project-3"
+          ><p>Spartan Meet</p></a
+        >
+      </div>
+
+      <div class="demo" augmented-ui="exe">
+        <a href="https://yourtune.herokuapp.com/"
+          ><img src="assets/pics/YTune.png" style="width:100%; height:80%;"
+        /></a>
+        <a href="https://github.com/TheAmberlamps/YourTune"><p>YourTune</p></a>
+      </div>
+
+      <div class="demo" augmented-ui="exe">
+        <a href="https://www.megandrewplumbing.com/"
+          ><img src="assets/pics/MegDrew.png" style="width:100%; height:80%;"
+        /></a>
+        <p>Megan-Drew Plumbing</p>
+      </div>
+
+      <div class="demo" augmented-ui="exe">
+        <a href="https://thawing-lowlands-09515.herokuapp.com/"
+          ><img src="assets/pics/Burger.png" style="width:100%; height:80%;"
+        /></a>
+        <a href="https://github.com/TheAmberlamps/burger"><p>Burger-Time</p></a>
+      </div>
+
+      <div class="demo" augmented-ui="exe">
+        <a href="https://theamberlamps.github.io/TriviaGame/"
+          ><img src="assets/pics/Vidtriv.png" style="width:100%; height:80%;"
+        /></a>
+        <a href="https://github.com/TheAmberlamps/TriviaGame"
+          ><p>Videogame Trivia</p></a
+        >
+      </div>
+
+      <div class="demo" augmented-ui="exe">
+        <a href="https://theamberlamps.github.io/unit-4-game/"
+          ><img src="assets/pics/Cryscol.png" style="width:100%; height:80%;"
+        /></a>
+        <a href="https://github.com/TheAmberlamps/unit-4-game"
+          ><p>Crystal Collector</p></a
+        >
+      </div>
+    </span>
 
     <script src="assets/js/glowing-nodes.js"></script>
   </body>

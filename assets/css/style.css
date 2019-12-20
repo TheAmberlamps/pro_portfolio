@@ -10,16 +10,18 @@ body {
 nav {
   margin: auto;
   /* position: absolute; */
-  width: 40%;
+  width: 70%;
   text-align: center;
   display: flex;
-  padding: 2rem 0px 0px 0px;
+  padding: 2rem 0px 2rem 0px;
   justify-content: space-between;
 }
 
 .navlinks {
   position: relative;
   vertical-align: middle;
+  opacity: 0.8;
+  padding: 2rem 0px 2rem 0px;
 }
 
 p {
@@ -73,13 +75,16 @@ canvas {
   --aug-border: 4px;
   --aug-border-bg: linear-gradient(#00a8c0, #0048a8);
   --aug-border-opacity: 0.7;
+  --aug-t-height: 10px;
+  --aug-b-height: 10px;
+  --aug-l-width: 10px;
+  --aug-r-width: 10px;
   /* --aug-inset-opacity: 0.8; */
   /* --aug-inset: 6px;
   --aug-inset-bg: linear-gradient(to top, #481878, #00a8c0); */
   display: inline-block;
   position: relative;
   left: 3rem;
-  /* align-content: center; */
 }
 
 .nav-augfig {
@@ -108,10 +113,9 @@ canvas {
   padding: 15px;
   margin: auto;
   position: relative;
-  top: 3rem;
-  /* top: 10rem; */
+  /* top: 2rem; */
   width: 40rem;
-  height: 10rem;
+  height: 13rem;
   font-size: 1rem;
   overflow: hidden;
 }
@@ -123,7 +127,7 @@ canvas {
   /* --aug-inset-opacity: 0.8; */
   /* --aug-inset: 6px; */
   position: relative;
-  top: 8rem;
+  top: 4rem;
   text-align: left;
   padding: 15px;
   margin: auto;
@@ -135,21 +139,28 @@ canvas {
   padding: 1rem;
 }
 
+#wrap {
+  width: 80%;
+  height: 100%;
+  display: inline-flexbox;
+  position: inherit;
+  /* justify-content: center; */
+}
+
 .demo {
-  --aug-border: 2px;
+  --aug-border: 3px;
   --aug-border-bg: linear-gradient(#0048a8, #00a8c0);
   --aug-border-opacity: 0.5;
   --aug-inset-opacity: 0.8;
   --aug-inset: 6px;
   --aug-inset-bg: linear-gradient(to top, #481878, #00a8c0);
   position: relative;
-  display: block;
+  display: inline-block;
   top: 5rem;
   width: 250px;
   height: 250px;
   margin: auto;
-  border: 20px;
-  padding: 10px; /* mind the gap */
+  padding: 10px;
   text-align: center;
 }
 
