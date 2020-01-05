@@ -80,7 +80,7 @@
   };
 
   Node.prototype.moveNode = function() {
-    this.enbergy -= 2;
+    this.energy -= 2;
     if (this.energy < 1) {
       this.energy = Math.random() * 100;
       if (this.x - this.anchorX < -ANCHOR_LENGTH) {
@@ -191,7 +191,9 @@
 
   function resizeWindow() {
     canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    canvas.height = document.body.scrollHeight;
+    console.log("canvas width: " + canvas.width);
+    console.log("canvas height: " + canvas.height);
   }
 
   function mousemoveHandler(e) {
