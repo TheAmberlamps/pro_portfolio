@@ -190,7 +190,7 @@
   }
 
   function resizeWindow() {
-    canvas.width = window.innerWidth;
+    canvas.width = document.body.clientWidth;
     canvas.height = document.body.scrollHeight;
     console.log("canvas width: " + canvas.width);
     console.log("canvas height: " + canvas.height);
