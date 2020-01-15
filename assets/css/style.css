@@ -131,7 +131,7 @@ canvas {
   top: 4rem;
   text-align: left;
   padding: 15px;
-  margin: auto;
+  margin: auto auto 4rem auto;
   font-size: 1rem;
   width: 50rem;
 }
