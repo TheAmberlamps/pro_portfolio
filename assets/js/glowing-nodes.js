@@ -211,7 +211,7 @@ var modals = document.querySelectorAll(".modal");
 var btn = document.querySelectorAll("div.demo");
 
 // Get the <span> elements that close the modals
-var spans = document.getElementsByClassName("close")[0];
+var spans = document.querySelectorAll("span.close");
 
 // When the user clicks on the button, open the modal
 for (i = 0; i < btn.length; i++) {
@@ -244,3 +244,4 @@ window.onclick = function(event) {
 
 console.log(modals);
 console.log(btn);
+console.log(spans);
