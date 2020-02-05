@@ -60,7 +60,7 @@ ul {
 .falling {
   writing-mode: vertical-lr;
   text-orientation: upright;
-  padding: 15px;
+  /* padding: 15px; */
 }
 
 canvas {
