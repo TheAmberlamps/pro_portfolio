@@ -152,7 +152,6 @@ canvas {
 #wrapper {
   display: flex;
   margin: auto;
-  /* position: inherit; */
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -169,7 +168,7 @@ canvas {
   top: 5rem;
   width: 250px;
   height: 250px;
-  margin: auto;
+  margin: 1.5rem auto 1.5rem auto;
   padding: 10px;
   text-align: center;
 }
