@@ -106,6 +106,7 @@ canvas {
   display: inline-block;
   position: relative;
   align-content: center;
+  text-align: center;
 }
 
 .my-augfiguration {
