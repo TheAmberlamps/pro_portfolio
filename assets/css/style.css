@@ -105,6 +105,7 @@ canvas {
   --aug-inset-bg: linear-gradient(to top, #481878, #00a8c0);
   display: inline-block;
   position: relative;
+  text-align: center;
 }
 
 .my-augfiguration {
