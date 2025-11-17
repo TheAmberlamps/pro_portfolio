@@ -1,4 +1,6 @@
-(function() {
+// taken from https://codepen.io/inkyy/pen/vYEGroB
+
+(function () {
   var canvas,
     ctx,
     circ,
@@ -33,7 +35,7 @@
   resizeWindow();
   mouse = {
     x: canvas.width / 2,
-    y: canvas.height / 2
+    y: canvas.height / 2,
   };
   ctx = canvas.getContext("2d");
   if (!ctx) {
@@ -53,7 +55,7 @@
     this.brightness = 0;
   }
 
-  Node.prototype.drawNode = function() {
+  Node.prototype.drawNode = function () {
     var color = "rgba(216, 48, 168, " + this.brightness + ")";
     ctx.beginPath();
     ctx.arc(
@@ -67,7 +69,7 @@
     ctx.fill();
   };
 
-  Node.prototype.drawConnections = function() {
+  Node.prototype.drawConnections = function () {
     for (var i = 0; i < this.siblings.length; i++) {
       var color = "rgba(24, 168, 216, " + this.brightness + ")";
       ctx.beginPath();
@@ -79,7 +81,7 @@
     }
   };
 
-  Node.prototype.moveNode = function() {
+  Node.prototype.moveNode = function () {
     this.energy -= 2;
     if (this.energy < 1) {
       this.energy = Math.random() * 100;
@@ -163,7 +165,7 @@
       distance = calcDistance(
         {
           x: mouse.x,
-          y: mouse.y
+          y: mouse.y,
         },
         node
       );
@@ -215,7 +217,7 @@ var spans = document.querySelectorAll("span.close");
 
 // When the user clicks on the button, open the modal
 for (i = 0; i < btn.length; i++) {
-  btn[i].onclick = function(e) {
+  btn[i].onclick = function (e) {
     e.preventDefault();
     modal = document.querySelector(e.target.getAttribute("href"));
     modal.style.display = "block";
@@ -224,7 +226,7 @@ for (i = 0; i < btn.length; i++) {
 
 // When the user clicks on <span> (x), close the modal
 for (var i = 0; i < spans.length; i++) {
-  spans[i].onclick = function() {
+  spans[i].onclick = function () {
     for (var index in modals) {
       if (typeof modals[index].style !== "undefined")
         modals[index].style.display = "none";
@@ -233,7 +235,7 @@ for (var i = 0; i < spans.length; i++) {
 }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
+window.onclick = function (event) {
   if (event.target.classList.contains("modal")) {
     for (var index in modals) {
       if (typeof modals[index].style !== "undefined")
