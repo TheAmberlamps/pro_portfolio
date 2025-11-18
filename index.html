@@ -18,9 +18,9 @@
       rel="stylesheet"
       type="text/css"
       href="https://unpkg.com/augmented-ui/augmented.css"
-      />
-      <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-      <title>My Portfolio</title>
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <title>My Portfolio</title>
     </head>
     
     <body class="crt">
@@ -28,22 +28,22 @@
       <canvas> </canvas>
     
       <nav>
-      <a class="nav-augfig" augmented-ui="l-rect b-clip-x tr-clip exe" style="--aug-b-height: 5%; --aug-l-width: 15%; --aug-l-height: 35%" align-text="center" href="index.html"><p class="falling">U S E R</p></a>
+      <a class="nav-augfig" data-augmented-ui="l-rect b-clip-x tr-clip" align-text="center" href="index.html"><p class="falling">U S E R</p></a>
       <a href="https://github.com/TheAmberlamps"><img class="navlinks" src="assets/pics/GitHub-Mark-120px.png" style="width: 75px; height: 75px" /></a>
       <a href="https://theamberlamps.itch.io/"><img class="navlinks" src="assets/pics/app-icon.png" style="width: 75px; height: 75px" /></a>
       <a href="mailto:unsted.paul@gmail.com"><img src="assets/pics/logo-gmail.png" class="navlinks" style="width: 75px; height: 75px" /></a>
       <a href="https://www.linkedin.com/in/paul-unsted-b0ab87198/"><img class="navlinks" src="assets/pics/Li-In.png" style="width: 75px; height: 75px" /></a>
-      <a class="nav-augfig" augmented-ui="r-rect b-clip-x tl-clip exe" style="--aug-b-height: 5%; --aug-r-width: 15%; --aug-r-height: 35%" href="portfolio.html"><p class="falling">W O R K</p></a>
+      <a class="nav-augfig" data-augmented-ui="r-rect b-clip-x tl-clip" href="portfolio.html"><p class="falling">W O R K</p></a>
     </nav>
     
     <div><p>Under Construction</p></div>
     
     <div
-    class="my-augfiguration"
-      augmented-ui="tl-rect r-rect bl-clip-y t-clip-x tr-round exe"
+    id="profile-aug"
+      data-augmented-ui="tl-rect t-clip-x tr-round r-rect bl-clip-y"
       >
       <!-- Card title, "Dev License" or something. Use a different font and style it to make it stand out -->
-      <div class="pic-augfig" augmented-ui="l-clip-y r-clip-y t-clip-x b-clip-x tl-clip tr-clip bl-clip br-clip exe" ><img id="myPic" src="assets/pics/myPic.png" alt="Picture of me" /></div>
+      <div class="pic-augfig" ><img id="myPic" src="assets/pics/myPic.png" alt="Picture of me" /></div>
       <ul id="bio">
         <li>Name: Unsted, Paul, Edward</li>
         <br />
@@ -59,7 +59,7 @@
       </ul>
     </div>
     
-    <div class="text-augfig" augmented-ui="tl-clip-y tr-clip-x bl-clip-x br-clip-y exe">
+    <div class="text-augfig" data-augmented-ui="tl-clip-y tr-clip-x bl-clip-x br-clip-y">
       <p id="bio">
         Intel: Subject possesses a versatile skillset. Owns and operates a sole
         <br />
@@ -74,17 +74,18 @@
         creating apps with the following technologies:
         <br />
         <ul>
+          <li>Lua</li>
           <li>Javascript ES6</li>
-          <li>Express</li>
-          <li>React</li>
-          <li>MySQL</li>
-          <li>MongoDB</li>
           <li>Node</li>
           <li>jQuery</li>
-          <li>Sequelize</li>
+          <li>MySQL</li>
           <li>Git</li>
+          <li>MongoDB</li>
+          <li>React</li>
+          <li>Express</li>
+          <li>Sequelize</li>
           <li>Heroku</li>
-          <li>and more.</li>
+          <li>and more</li>
         </ul>
       </p>
     </div>

@@ -97,12 +97,12 @@ canvas {
 }
 
 .nav-augfig {
-  --aug-border: 2px;
+  --aug-border: initial;
   --aug-border-bg: linear-gradient(#0048a8, #00a8c0);
   --aug-border-opacity: 0.5;
-  --aug-inset-opacity: 0.8;
-  --aug-inset: 6px;
-  --aug-inset-bg: linear-gradient(to top, #481878, #00a8c0);
+  --aug-inlay: initial;
+  --aug-inlay-opacity: 0.8;
+  --aug-inlay-bg: linear-gradient(to top, #00a8c0, #481878);
   display: inline-block;
   position: relative;
   align-content: center;
@@ -131,17 +131,31 @@ canvas {
   overflow: hidden;
 }
 
+#profile-aug {
+  --aug-border: initial;
+  --aug-border-bg: linear-gradient(#0048a8, #00a8c0);
+  --aug-border-opacity: 0.5;
+  --aug-inlay: initial;
+  --aug-inlay-bg: linear-gradient(to top, #481878, #00a8c0);
+  --aug-inlay-opacity: 0.8;
+  margin: auto;
+  position: relative;
+  width: fit-content;
+  height: 100%;
+}
+
 .text-augfig {
-  --aug-border: 4px;
+  --aug-border: initial;
   --aug-border-bg: linear-gradient(#0048a8, #00a8c0);
   --aug-border-opacity: 0.5;
   /* --aug-inset-opacity: 0.8; */
   /* --aug-inset: 6px; */
+  text-align: auto;
   position: relative;
   top: 4rem;
   text-align: left;
   padding: 15px;
-  margin: auto auto 4rem auto;
+  margin: auto;
   font-size: 1rem;
   width: 50rem;
 }
