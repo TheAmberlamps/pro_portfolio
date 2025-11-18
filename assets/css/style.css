@@ -109,6 +109,11 @@ canvas {
   text-align: center;
 }
 
+.aug-icon {
+  --aug-border: initial;
+  --aug-border-bg: radial-gradient(#481878, #00a8c0);
+}
+
 .my-augfiguration {
   --aug-border: 2px;
   --aug-border-bg: linear-gradient(#0048a8, #00a8c0);
@@ -172,12 +177,9 @@ canvas {
 }
 
 .demo {
-  --aug-border: 3px;
+  --aug-border: initial;
   --aug-border-bg: linear-gradient(#0048a8, #00a8c0);
   --aug-border-opacity: 0.5;
-  --aug-inset-opacity: 0.8;
-  --aug-inset: 6px;
-  --aug-inset-bg: linear-gradient(to top, #481878, #00a8c0);
   position: relative;
   display: inline-block;
   top: 5rem;
