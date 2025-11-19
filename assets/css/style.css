@@ -1,9 +1,10 @@
 html,
 body {
   margin: 0;
-  /* background-color: #25003a; */
+  background-color: rgb(0, 24, 48);
   /* overflow: hidden; */
   font-family: "Inconsolata", monospace;
+  height: 100%;
   /* font-family: "Tomorrow", sans-serif; */
 }
 
@@ -66,9 +67,10 @@ ul {
 canvas {
   display: block;
   position: absolute;
+  height: min-content;
+  width: fit-content;
   top: 0;
   left: 0;
-  background-color: rgb(0, 24, 48);
 }
 
 #myPic {
@@ -146,7 +148,7 @@ canvas {
   margin: auto;
   position: relative;
   width: fit-content;
-  height: 100%;
+  height: fit-content;
 }
 
 .text-augfig {
