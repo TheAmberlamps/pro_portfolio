@@ -75,7 +75,7 @@
     </nav>
     <div
       class="text-augfig"
-      augmented-ui="tl-clip-y tr-clip-x bl-clip-x br-clip-y exe"
+      data-augmented-ui="tl-clip-y tr-clip-x bl-clip-x br-clip-y exe"
       style="text-align: center"
     >
       <p id="bio">
@@ -87,40 +87,31 @@
     </div>
 
     <span id="wrapper">
-      <div class="demo" data-augmented-ui href="#modal1">
-        <img
-          src="assets/pics/SMeet.png"
-          style="width: 100%; height: 80%"
-          href="#modal1"
-        />
+
+      <div class="demo" data-augmented-ui>
+        <img src="assets/pics/SMeet.png" style="width: 100%; height: 80%"/>
         <p>Spartan Meet</p>
       </div>
+      
+      <dialog data-augmented-ui id="modal-dialog-0" class="modal-content">
+        <span class="close">&times;</span>
+        <p>
+          This application is the result of the final group project in my
+          University of Toronto bootcamp. It's designed for businesses to
+          record and track the cost of meetings and was created using React,
+          Moment-UI, FullCalendar, Express and MySQL, deployed to Heroku. It
+          remains the most ambitious and also most technically complex app I
+          have worked on so far.
+        </p>
+        <br /><br />
+        <span class="codeLinks">
+          <a href="https://github.com/TheAmberlamps/Group-Project-3">Github</a>
+          <a href="https://project-3-heroku.herokuapp.com/">Deployed Project</a>
+        </span>
+      </dialog>
 
-      <div id="modal1" class="modal">
-        <div
-          class="modal-content"
-          augmented-ui="tl-round tr-round bl-round br-round exe"
-        >
-          <span class="close">&times;</span>
-          <p>
-            This application is the result of the final group project in my
-            University of Toronto bootcamp. It's designed for businesses to
-            record and track the cost of meetings and was created using React,
-            Moment-UI, FullCalendar, Express and MySQL, deployed to Heroku. It
-            remains the most ambitious and also most technically complex app I
-            have worked on so far.
-          </p>
-          <br /><br />
-          <span class="codeLinks">
-            <a href="https://github.com/TheAmberlamps/Group-Project-3">Github</a
-            ><a href="https://project-3-heroku.herokuapp.com/"
-              >Deployed Project</a
-            >
-          </span>
-        </div>
-      </div>
-
-      <div class="demo" data-augmented-ui href="#modal2">
+      <!-- this is an example of the previous modal implementation, hopefully studying this will allow me to understand better how to make the new implementation render in the way I intend it to-->
+      <!-- <div class="demo" data-augmented-ui href="#modal2">
         <img
           src="assets/pics/YTune.png"
           style="width: 100%; height: 80%"
@@ -146,108 +137,103 @@
             ><a href="https://yourtune.herokuapp.com/">Deployed Project</a>
           </span>
         </div>
+      </div> -->
+
+      <div class="demo" data-augmented-ui>
+        <img
+          src="assets/pics/YTune.png"
+          style="width: 100%; height: 80%"
+        />
+        <p>YourTune</p>
       </div>
 
-      <div class="demo" data-augmented-ui href="#modal3">
+      <dialog data-augmented-ui id="modal-dialog-1" class="modal-content">
+        <span class="close">&times;</span>
+        <p>
+          YourTune is an application designed as a platform for streamers and
+          youtubers to purchase music for their channels, and for musicians to
+          sell their creations. It is the result of my second Bootcamp group
+          project made with MySQL, Express, Handlebars, Sequelize and Axios.
+        </p>
+        <span class="codeLinks">
+          <a href="https://github.com/TheAmberlamps/YourTune">Github</a>
+          <a href="https://yourtune.herokuapp.com/">Deployed Project</a>
+        </span>
+      </dialog>
+
+      <div class="demo" data-augmented-ui>
         <img
           src="assets/pics/MegDrew.png"
           style="width: 100%; height: 80%"
-          href="#modal3"
         />
         <p>Megan-Drew Plumbing</p>
       </div>
 
-      <div id="modal3" class="modal">
-        <div
-          class="modal-content"
-          augmented-ui="tl-round tr-round bl-round br-round exe"
-        >
-          <span class="close">&times;</span>
-          <p>
-            Megan Drew Plumbing is the first professional website I designed,
-            using Wix. I thoroughly enjoyed working on it but quickly realised
-            the limitations of a website builder service, which pushed me to
-            pursue proper web development.
-          </p>
-          <span class="codeLinks">
-            <a href="https://www.megandrewplumbing.com/">Website</a>
-          </span>
-        </div>
-      </div>
+      <dialog data-augmented-ui id="modal-dialog-2" class="modal-content">
+        <span class="close">&times;</span>
+        <p>
+          Megan Drew Plumbing is the first professional website I designed,
+          using Wix. I thoroughly enjoyed working on it but quickly realised
+          the limitations of a website builder service, which pushed me to
+          pursue proper web development.
+        </p>
+        <span class="codeLinks">
+          <a href="https://www.megandrewplumbing.com/">Website</a>
+        </span>
+      </dialog>
 
-      <div class="demo" data-augmented-ui href="#modal4">
+      <div class="demo" data-augmented-ui>
         <img
           src="assets/pics/Burger.png"
           style="width: 100%; height: 80%"
-          href="#modal4"
         />
         <p>Burger-Time</p>
       </div>
 
-      <div id="modal4" class="modal">
-        <div
-          class="modal-content"
-          augmented-ui="tl-round tr-round bl-round br-round exe"
-        >
-          <span class="close">&times;</span>
-          <p>
-            Burger Time is a "burger logger" app created with MySQL, Node,
-            Express, Express Handlebars, and deployed to Heroku. Users can add
-            new burgers to the database, and they are sorted by whether or not
-            they have been "eaten". This was the final project for the
-            Handlebars module of my Bootcamp.
-          </p>
-          <span class="codeLinks">
-            <a href="https://github.com/TheAmberlamps/burger">Github</a
-            ><a href="https://thawing-lowlands-09515.herokuapp.com/"
-              >Deployed Project</a
-            >
-          </span>
-        </div>
-      </div>
+      <dialog data-augmented-ui id="modal-dialog-3" class="modal-content">
+        <span class="close">&times;</span>
+        <p>
+          Burger Time is a "burger logger" app created with MySQL, Node,
+          Express, Express Handlebars, and deployed to Heroku. Users can add
+          new burgers to the database, and they are sorted by whether or not
+          they have been "eaten". This was the final project for the
+          Handlebars module of my Bootcamp.
+        </p>
+        <span class="codeLinks">
+          <a href="https://github.com/TheAmberlamps/burger">Github</a>
+          <a href="https://thawing-lowlands-09515.herokuapp.com/">Deployed Project</a>
+        </span>
+      </dialog>
 
-      <div class="demo" data-augmented-ui href="#modal5">
+      <div class="demo" data-augmented-ui>
         <img
           src="assets/pics/Vidtriv.png"
           style="width: 100%; height: 80%"
-          href="#modal5"
         />
         <p>Videogame Trivia</p>
       </div>
 
-      <div id="modal5" class="modal">
-        <div
-          class="modal-content"
-          augmented-ui="tl-round tr-round bl-round br-round exe"
-        >
-          <span class="close">&times;</span>
-          <p>
-            A simple timed trivia game created with Javascript using jQuery, on
-            one of my favourite topics: videogames.
-          </p>
-          <span class="codeLinks">
-            <a href="https://github.com/TheAmberlamps/TriviaGame">Github</a
-            ><a href="https://theamberlamps.github.io/TriviaGame/"
-              >Deployed Project</a
-            >
-          </span>
-        </div>
-      </div>
+      <dialog data-augmented-ui id="modal-dialog-4" class="modal-content">
+        <span class="close">&times;</span>
+        <p>
+          A simple timed trivia game created with Javascript using jQuery, on
+          one of my favourite topics: videogames.
+        </p>
+        <span class="codeLinks">
+          <a href="https://github.com/TheAmberlamps/TriviaGame">Github</a>
+          <a href="https://theamberlamps.github.io/TriviaGame/">Deployed Project</a>
+        </span>
+      </dialog>
 
-      <div class="demo" data-augmented-ui href="#modal6">
+      <div class="demo" data-augmented-ui>
         <img
           src="assets/pics/ez_draw.png"
           style="width: 100%; height: 80%"
-          href="#modal6"
         />
         <p>Ez Draw</p>
       </div>
 
-      <div id="modal6" class="modal">
-        <div
-          class="modal-content"
-          augmented-ui="tl-round tr-round bl-round br-round exe"
-        >
+        <dialog data-augmented-ui id="modal-dialog-5" class="modal-content">
           <span class="close">&times;</span>
           <p>
             A web-based drawing app made using p5.js. It's still fairly
@@ -255,28 +241,20 @@
             shapes, fill tool, touch support, image export and more.
           </p>
           <span class="codeLinks">
-            <a href="https://github.com/TheAmberlamps/ez_draw">Github</a
-            ><a href="https://theamberlamps.github.io/ez_draw/"
-              >Deployed Project</a
-            >
+            <a href="https://github.com/TheAmberlamps/ez_draw">Github</a>
+            <a href="https://theamberlamps.github.io/ez_draw/">Deployed Project</a>
           </span>
-        </div>
-      </div>
+        </dialog>
 
-      <div class="demo" data-augmented-ui href="#modal7">
+      <div class="demo" data-augmented-ui>
         <img
           src="assets/pics/algo_comp.png"
           style="width: 100%; height: 80%"
-          href="#modal7"
         />
         <p>Algo Compare</p>
       </div>
 
-      <div id="modal7" class="modal">
-        <div
-          class="modal-content"
-          augmented-ui="tl-round tr-round bl-round br-round exe"
-        >
+        <dialog data-augmented-ui id="modal-dialog-6" class="modal-content">
           <span class="close">&times;</span>
           <p>
             Algo Compare, an algorithm comparison application. Users choose the
@@ -288,16 +266,13 @@
             the future instead of just displaying the results in text.
           </p>
           <span class="codeLinks">
-            <a href="https://github.com/TheAmberlamps/algo_compare">Github</a
-            ><a
-              href="https://theamberlamps.github.io/algo_compare/assets/index.html"
-              >Deployed Project</a
-            >
+            <a href="https://github.com/TheAmberlamps/algo_compare">Github</a>
+            <a href="https://theamberlamps.github.io/algo_compare/assets/index.html">Deployed Project</a>
           </span>
-        </div>
-      </div>
+        </dialog>
     </span>
 
     <script src="assets/js/glowing-nodes.js"></script>
+    <script src="assets/js/modals.js"></script>
   </body>
 </html>
