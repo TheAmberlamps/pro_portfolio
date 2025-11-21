@@ -73,31 +73,6 @@ canvas {
   left: 0;
 }
 
-#myPic {
-  display: inline-block;
-  position: relative;
-  height: 120px;
-  width: 120px;
-  opacity: 0.8;
-  padding: 10px;
-}
-
-.pic-augfig {
-  --aug-border: 4px;
-  --aug-border-bg: linear-gradient(#00a8c0, #0048a8);
-  --aug-border-opacity: 0.7;
-  --aug-t-height: 10px;
-  --aug-b-height: 10px;
-  --aug-l-width: 10px;
-  --aug-r-width: 10px;
-  /* --aug-inset-opacity: 0.8; */
-  /* --aug-inset: 6px;
-  --aug-inset-bg: linear-gradient(to top, #481878, #00a8c0); */
-  display: inline-block;
-  position: relative;
-  left: 3rem;
-}
-
 .nav-augfig {
   --aug-border: initial;
   --aug-border-bg: linear-gradient(#0048a8, #00a8c0);
@@ -116,26 +91,20 @@ canvas {
   --aug-border-bg: radial-gradient(#481878, #00a8c0);
 }
 
-.my-augfiguration {
-  --aug-border: 2px;
-  --aug-border-bg: linear-gradient(#0048a8, #00a8c0);
-  --aug-border-opacity: 0.5;
-  --aug-inset-opacity: 0.8;
-  --aug-inset: 6px;
-  --aug-inset-bg: linear-gradient(to top, #481878, #00a8c0);
-  --aug-t-width: 33%;
-  --aug-t-height: 10px;
-  --aug-r-height: 40%;
-  --aug-bl-height: 25%;
-  text-align: left;
-  padding: 15px;
-  margin: auto;
+#myPic {
+  height: 120px;
+  width: 120px;
+  opacity: 0.8;
+  padding: 10px;
+}
+
+.pic-augfig {
+  --aug-border: initial;
+  --aug-border-bg: linear-gradient(#00a8c0, #0048a8);
+  --aug-border-opacity: 0.7;
+  display: inline-block;
   position: relative;
-  /* top: 2rem; */
-  width: 40rem;
-  height: 13rem;
-  font-size: 1rem;
-  overflow: hidden;
+  left: 3rem;
 }
 
 #profile-aug {
@@ -146,9 +115,7 @@ canvas {
   --aug-inlay-bg: linear-gradient(to top, #481878, #00a8c0);
   --aug-inlay-opacity: 0.8;
   margin: auto;
-  position: relative;
   width: fit-content;
-  height: fit-content;
 }
 
 .text-augfig {
