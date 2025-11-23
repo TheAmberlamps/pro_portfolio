@@ -40,14 +40,6 @@ p {
   color: white;
 }
 
-ul#bio {
-  display: inline-block;
-  position: relative;
-  left: 4rem;
-  color: white;
-  list-style-type: none;
-}
-
 ul {
   color: white;
   list-style-type: none;
@@ -104,7 +96,7 @@ canvas {
   --aug-border-opacity: 0.7;
   display: inline-block;
   position: relative;
-  left: 3rem;
+  left: 2rem;
 }
 
 #profile-aug {
@@ -124,18 +116,26 @@ canvas {
   --aug-border-opacity: 0.5;
   /* --aug-inset-opacity: 0.8; */
   /* --aug-inset: 6px; */
-  text-align: auto;
-  position: relative;
+  display: grid;
+  place-content: center;
+  text-align: center;
   top: 4rem;
-  text-align: left;
   padding: 15px;
   margin: auto;
   font-size: 1rem;
-  width: 50rem;
+  width: fit-content;
 }
 
 #bio {
-  padding: 1rem;
+  padding: 2rem;
+  display: inline-block;
+  position: relative;
+  color: white;
+  list-style-type: none;
+}
+
+#bio_ul {
+  padding: 0;
 }
 
 #wrapper {
